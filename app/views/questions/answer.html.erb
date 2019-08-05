@@ -1,0 +1,10 @@
+<% if params[:asking_coach].include? '?' %>
+  <p>Silly question, get dressed and go to work!</p>
+<% elsif params[:asking_coach] == 'I am going to work' %>
+  <p>Great</p>
+<% else %>
+  <p>I don't care, get dressed and go to work!</p>
+<%end%>
+
+
+<%= link_to "return question", '/ask' %>
